@@ -1,0 +1,146 @@
+body {
+  background-color: #cccccc;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Navbar  */
+
+.navbar {
+  height: 80px;
+  background-color: transparent !important;
+  border: none;
+  color: white;
+  z-index: 100;
+  /* transition: background-color 1s ease 0s; */
+}
+
+.navbar-default {
+  border: none !important;
+}
+
+.navbar-default .navbar-brand {
+  margin-top: 10px;
+  color: white !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white !important;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 5px 5px 5px;
+}
+
+.navbar-default .navbar-nav > li > a:visited {
+  text-decoration: none;
+}
+
+/* Setting the toggle menu's border */
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border: none;
+}
+
+/* Color for the navbar toggle button in mobile view*/
+.navbar-toggle {
+  background-color: transparent !important;
+  border-color: #000 !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #000 !important;
+}
+/* Color of the menu after the navbar is toggled */
+
+/* Solid class attached on scroll past first section */
+.navbar.solid {
+  background-color: #490d40;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px grey;
+}
+
+.navbar.solid .navbar-brand {
+  color: #c57ed3;
+  transition: color 1s ease 0s;
+}
+
+.navbar.solid .navbar-nav > li > a {
+  color: #c57ed3;
+  transition: color 1s ease 0s;
+}
+
+/* Navbar Ends*/
+
+/* Landing section  */
+.message {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 70%;
+  top: 80%;
+  display: block;
+  position: absolute;
+  color: #000;
+  padding: 0.5em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 20px;
+}
+
+.message p {
+  font-size: larger;
+}
+.bg {
+  height: 100%;
+  width: 100%;
+  background-image: url(download.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin-top: -80px;
+}
+
+.header {
+  z-index: 2;
+  text-align: center;
+  top: 95%;
+}
+
+.images {
+  position: absolute;
+  z-index: 3;
+  text-align: center;
+  top: 140%;
+  left: 10%;
+}
+
+.circle-grid .circle-item img {
+  vertical-align: middle;
+  border-radius: 20% !important;
+  padding-top: 10%;
+}
+
+.circle-grid .circle-item {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 25px;
+  padding: 0 var(--basicGrid-outer, 25px);
+  width: 100%;
+  max-width: 1440px;
+  max-width: var(--basicGrid-width, 1440px);
+}
+
+@media (min-width: 640px) {
+  html {
+    --basicGrid-width: 90%;
+  }
+}
